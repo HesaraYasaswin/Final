@@ -1,0 +1,39 @@
+
+2
+a.) Upcasting and downcasting are two operations that are used in object-oriented programming to convert objects from one class to another. Upcasting is the process of converting a subclass object to its superclass object, while downcasting is the process of converting a superclass object to its subclass object.
+
+For example, let's say we have two classes, "Animal" and "Cat", where "Cat" is a subclass of "Animal". Here is an example of upcasting:
+
+example:
+ Animal animal = new Cat();
+
+In this example, we create a new instance of the "Cat" class, but assign it to a variable of type "Animal". This is possible because a "Cat" object is also an "Animal" object.
+
+Here is an example of downcasting:
+
+Animal animal = new Cat();
+Cat cat = (Cat) animal;
+
+In this example, we first create a new instance of the "Cat" class, and then assign it to a variable of type "Animal". We then downcast the "animal" object to a "Cat" object using the "(Cat)" operator.
+
+b. HashSet and Hashtable are two Java collections that are used to store groups of objects. HashSet is a collection of unique objects, while Hashtable is a collection of key-value pairs. Here are some examples of their applications:
+
+HashSet: HashSet can be used to store a collection of unique objects, such as a set of user IDs or a list of unique items in a shopping cart.
+
+Set<String> userIds = new HashSet<String>();
+userIds.add("1234");
+userIds.add("5678");
+userIds.add("9012");
+
+Hashtable: Hashtable can be used to store key-value pairs, such as a mapping of product IDs to product names.
+
+Hashtable<Integer, String> products = new Hashtable<Integer, String>();
+products.put(1001, "iPhone");
+products.put(1002, "Samsung Galaxy");
+products.put(1003, "Google Pixel");
+
+c. Stack and Heap are two areas of memory that are used to store objects in Java. Here is a brief explanation of the differences between the two:
+
+Stack: The stack is a region of memory that is used to store local variables and method calls. Each method call creates a new stack frame on top of the existing stack.
+
+Heap: The heap is a region of memory that is used to store objects that are created using the "new" keyword. Objects in the heap can be accessed from anywhere in the program.
