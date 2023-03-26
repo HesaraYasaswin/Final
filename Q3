@@ -1,0 +1,17 @@
+3.
+c)
+import java.util.Scanner;
+import ai.openai.com.*;
+import javax.net.ssl.SSLException;
+
+public class Chatbot {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Hello! How can I help you today?");
+        while (true) {
+            String input = scanner.nextLine();
+            if (input.equalsIgnoreCase("quit")) {
+                break;
+            }
+            try {
+                OpenAI api = new OpenAI("<your API key>");
